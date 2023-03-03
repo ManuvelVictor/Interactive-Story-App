@@ -1,14 +1,14 @@
-package com.example.interactivestoryapp;
+package com.example.interactivestoryapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.interactivestoryapp.R;
 
 public class MainActivity extends AppCompatActivity {
     private EditText nameField;

@@ -1,4 +1,6 @@
-package com.example.interactivestoryapp;
+package com.example.interactivestoryapp.ui;
+
+import static com.example.interactivestoryapp.R.id.storyTextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+
+import com.example.interactivestoryapp.R;
 
 public class StoryActivity extends AppCompatActivity {
 
@@ -19,7 +23,7 @@ public class StoryActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String name = intent.getStringExtra(getResources().getString(R.string.name));
-        textView = findViewById(R.id.textView);
+        textView = findViewById(storyTextView);
         textView.setText(name);
         Log.d(TAG, name);
     }
